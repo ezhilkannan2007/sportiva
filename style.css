@@ -1,0 +1,370 @@
+
+body{
+
+    background-color:white;
+}
+.overlay{
+    background-color:black;
+    width:100%;
+    height:100%;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:12;
+    transition:2s;
+    display:none;
+}
+.header{
+    
+    display:flex;
+    flex-wrap:wrap;
+}
+.header div{
+    color:black;
+    align-items:center;
+    display:flex;
+    width:100%;
+    padding:10px;
+    justify-content:space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+#title{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+li,ul,h1{
+    color:#1D232C;
+    gap:20px;
+    display:flex;
+}
+
+li:hover{
+    color:gray;
+}
+
+
+li a{
+    color:#1D232C;
+    text-decoration: none;
+}
+
+.side_header{
+    position:fixed;
+    width:35%;
+    height:100%;
+    top:0;
+    left:-65%;
+    background-color:#1D232C;
+    transition:1s ease-in-out 0s;
+    border-right:#1D232C 2px solid;
+    z-index:20;
+    
+}
+
+.sh_h{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.sh_h{
+    padding-left:20px;
+    gap:20px;
+    text-decoration:none;
+    color:white
+}
+
+.side_header i{
+    color:white;
+    position:absolute;
+    left:90%;
+    top:2%;
+
+}
+
+.h1{
+    font-family: "Poppins", sans-serif;
+    margin-left:10px;
+    margin-top:20px;
+}
+ul{
+    margin-top:20px;
+    margin-left:1%;
+}
+#search{
+    margin-top:10px;
+    height:30px;
+    margin-left:26%;
+    border-radius:15px;
+    width:45%;
+    transition : transform 0.5s ease-in-out 0s;
+    outline:none;
+}
+
+#search::placeholder{
+    padding:20px;
+}
+#search:hover{
+    transform :scale(1.1);
+    box-shadow: 0,10px,20px,rgba(37, 36, 36, 0.15);
+}
+
+#three_line{
+    display:none;
+}
+
+#hero_section{
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:50px;
+}
+
+.hs{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    background-color:#1D232C;
+    width:80px;
+    outline:none;
+
+
+}
+
+.about{
+    display:flex;
+    justify-content: space-between;
+    gap:20px
+}
+
+h2{
+    font-family: "Poppins" , sans-serif;
+}
+
+.about1{
+    padding:10px;
+    display:flex;
+    width:30%;
+    height:15%;
+    background-color:#f2f4f7;
+    border-radius: 5px;
+}
+.about2{
+    padding:10px;
+    display:flex;
+    width:30%;
+    height:15%;
+    background-color:#f2f4f7;
+    border-radius: 5px;
+}
+.about3{
+    padding:10px;
+    display:flex;
+    width:30%;
+    height:15%;
+    background-color:#f2f4f7;
+    border-radius: 5px;
+}
+
+.bats{
+    display:flex;
+    flex-wrap:wrap;
+    margin:20px;
+    justify-content:space-around;
+    gap:20px;
+    
+
+}
+
+.bats div{
+   width:175px;
+   font-family: "Montserrat", sans-serif;
+   transition : transform 0.3s ease 0s
+}
+
+.bats div:hover{
+    
+     transform:scale(1.05);
+     z-index: 10;
+     padding:5px;
+     text-align:center;
+     background-color:lightgrey;
+     box-shadow : 0 10px 25px rgba(0, 0, 0, 0.15);
+     border-radius:2px;
+}
+@media screen and (max-width:647px){
+    ul{
+        display:none;
+    }
+    #three_line{
+        display:block;
+    }
+    .bats div{
+        width:45%;
+    }
+    .football div{
+        width:45%;
+    }
+    .others div{
+        width:45%;
+    }
+    .hockey div{
+        width:45%;
+    }
+    #hero_section .hsimage{
+        display:none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about1{
+        width:100%;
+    }
+    .about2{
+        width:100%;
+    }
+    .about3{
+        width:100%;
+    }
+}
+
+.football{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:20%;
+    margin:20px;
+    justify-content: space-around;
+    gap:25px;
+}
+
+.football div{
+    width:175px;
+    font-family: "Montserrat", sans-serif;
+    transition : transform 0.3s ease 0s
+}
+
+.football div:hover{
+     transform:scale(1.05);
+     z-index: 10;
+     padding:10px;
+     text-align:center;
+     background-color:lightgrey;
+     box-shadow : 0 10px 25px rgba(0, 0, 0, 0.15);
+     border-radius:2px;
+}
+
+
+.other{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:30%;
+    margin:30px;
+    justify-content:space-around;
+}
+.other div{
+    margin:20px;
+    width:175px;
+    font-family: "Montserrat", sans-serif;
+    transition : transform 0.3s ease 0s
+}
+.other div:hover{
+     transform:scale(1.05);
+     z-index: 10;
+     padding:5px;
+     text-align:center;
+     background-color:lightgrey;
+     box-shadow : 0 10px 25px rgba(0, 0, 0, 0.15);
+     border-radius:2px;
+}
+
+
+
+.hockey{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:30%;
+    margin:50px;
+    padding-left:30px;
+    justify-content:space-around;
+
+}
+.hockey div{
+    width:175px;
+    font-family: "Montserrat", sans-serif;
+      transition : transform 0.3s ease 0s
+}
+.hockey div:hover{
+     transform:scale(1.05);
+     z-index: 10;
+     padding:5px;
+     text-align:center;
+     background-color:lightgrey;
+     box-shadow : 0 10px 25px rgba(0, 0, 0, 0.15);
+     border-radius:2px;
+}
+#abt{
+    text-align:center;
+    font-family: "Montserrat", sans-serif;
+}
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:20%;
+    justify-content:space-around;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+button{
+    font-family:"Poppins", sans-serif;;
+    background-color: #1D232C;
+    width:50px;
+    margin:10px;
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+}
+button a{
+    
+    color:white;
+    width: 1px;
+    font-family: "Archivo", sans-serif;
+    text-decoration:none;
+}
+button:hover{
+   
+    background-color:#465977;
+}
+
+
+.contact{
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    color:white;
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.contact i{
+    display:inline-block;
+    text-align: none;
+}
+
+
