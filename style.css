@@ -207,41 +207,7 @@ h2{
      box-shadow : 0 10px 25px rgba(0, 0, 0, 0.15);
      border-radius:2px;
 }
-@media screen and (max-width:647px){
-    ul{
-        display:none;
-    }
-    #three_line{
-        display:block;
-    }
-    .bats div{
-        width:45%;
-    }
-    .football div{
-        width:45%;
-    }
-    .others div{
-        width:45%;
-    }
-    .hockey div{
-        width:45%;
-    }
-    #hero_section .hsimage{
-        display:none;
-    }
-    .about{
-        flex-direction: column;
-    }
-    .about1{
-        width:100%;
-    }
-    .about2{
-        width:100%;
-    }
-    .about3{
-        width:100%;
-    }
-}
+
 
 .football{
     display:flex;
@@ -364,6 +330,42 @@ button:hover{
 .contact i{
     display:inline-block;
     text-align: none;
+}
+
+@media screen and (max-width:647px){
+    ul{
+        display:none;
+    }
+    #three_line{
+        display:block;
+    }
+    .bats div{
+        width:45%;
+    }
+    .football div{
+        width:45%;
+    }
+    .others div{
+        width:45%;
+    }
+    .hockey div{
+        width:45%;
+    }
+    #hero_section .hsimage{
+        display:none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about1{
+        width:100%;
+    }
+    .about2{
+        width:100%;
+    }
+    .about3{
+        width:100%;
+    }
 }
 
 
