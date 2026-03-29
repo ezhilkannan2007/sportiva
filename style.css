@@ -279,10 +279,10 @@ h2 {
     transition: transform 0.3s ease 0s
 }
 
+/* ✅ FIXED (only change: removed padding) */
 .football div:hover {
     transform: scale(1.05);
     z-index: 10;
-    padding: 10px;
     text-align: center;
     background-color: lightgrey;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -360,7 +360,6 @@ h2 {
 
 button {
     font-family: "Poppins", sans-serif;
-    ;
     background-color: #1D232C;
     width: 50px;
     margin: 10px;
@@ -397,6 +396,7 @@ button:hover {
     text-align: none;
 }
 
+/* Keep your mobile fix */
 @media (hover: none) {
     .football div:hover {
         transform: none;
@@ -404,13 +404,4 @@ button:hover {
         box-shadow: none;
         background-color: transparent;
     }
-}
-/* FIX overlap issue */
-.football div {
-    position: relative;
-}
-
-/* Prevent stacking issue */
-.football div:hover {
-    z-index: 1;
 }
