@@ -405,3 +405,12 @@ button:hover {
         background-color: transparent;
     }
 }
+/* FIX overlap issue */
+.football div {
+    position: relative;
+}
+
+/* Prevent stacking issue */
+.football div:hover {
+    z-index: 1;
+}
